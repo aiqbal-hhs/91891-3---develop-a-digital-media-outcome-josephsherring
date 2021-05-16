@@ -1,0 +1,237 @@
+/*This is for the headings of the text*/
+h2 {
+    color: #D4D8E1;
+    font-family: 'Actor';
+    font-size: 1.5vw;
+    background-color: #313640;
+    padding-left: 1.2vw;
+}
+/*This is the styling for the paragraphs*/
+p {
+    color: #B3B8BF;
+    font-family: 'Antic';
+    letter-spacing: 0.025vw;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    font-size: 1vw;
+    
+}
+
+/*removes the margins and changes the background colour*/
+body {
+   background-color: #313640;
+   margin: 0;
+;
+  }
+
+/*Media query for phone sizes*/
+@media (min-width: 320px) and (max-width: 480px) {
+  body {background-color: #313640;}
+    p {padding-right: 5vw;
+        padding-left: 5vw;
+    font-size: 3vw;}
+    h2 {font-size: 5vw;
+    padding-left: 5vw;}
+    img{display: none;}
+/*makes the column amount to 2 and makes there be 6 rows aswell as putting the sections in the right rows and columns*/
+.grid-container {
+        grid-template-columns: 50% 50% !important;
+    grid-template-rows: auto 5% auto 5% auto auto !important;
+    }
+.section1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.section2 {
+    grid-column: 2;
+    grid-row: 1;
+    }
+.section3 {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+.section4 {
+    grid-column: 1 / span 2;
+    grid-row:4; 
+}
+.section5 {
+    grid-column: 1 / span 2;
+    grid-row:3; 
+}
+.section6 {
+    grid-column: 1 / span 2;
+    grid-row:5; 
+}
+    .section7  {
+        grid-column:    
+    }       
+/*removes the video and image when the screen gets too small to make the content easier to process*/
+        img{display: none;}
+    iframe{display: none;}
+}
+
+
+/*Tablets and Ipads to fix formatting*/
+@media (min-width: 481px) and (max-width: 768px) {
+/*changes the column amount to 2 and makes there be 5 rows aswell as putting the sections in the right rows and columns*/
+    grid-container{
+        grid-template-columns: 50% 50% !important;
+    grid-template-rows: auto auto auto auto auto !important;
+    }
+.section1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.section2 {
+    grid-column: 3;
+    grid-row: 1;
+    }
+.section3 {
+    grid-column: 1 / span 3;
+    grid-row: 2;
+}
+.section4 {
+    grid-column: 1 / span 3;
+    grid-row:4; 
+}
+.section5 {
+    grid-column: 1 / span 3;
+    grid-row:3; 
+}
+.section6 {
+    grid-column: 1 / span 3;
+    grid-row:5; 
+}
+        img{display: none;}
+    iframe{display: none;}
+}
+/*Small computers and Laptops custom sizing*/
+@media (min-width: 769px) and (max-width: 1024px) {
+  body {
+   background-color: #313640;
+  }
+    /*changes the column amount to 3 and makes there be 3 rows aswell as putting the sections in the right rows and columns*/
+        .grid-container {
+  grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows: auto 4vw auto;}
+.section1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.section2 {
+    grid-column: 3;
+    grid-row:1; 
+}
+.section3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.section4 {
+    grid-column: 2 / 3;
+    grid-row:2; 
+}
+.section5 {
+    grid-column:1 / span 2;
+    grid-row:3; 
+}
+.section6 {
+    grid-column:2;
+    grid-row:3; 
+}
+.section7 {
+    grid-column:3;
+    grid-row:3; 
+}
+
+}
+/*Large monitors and above like TVs*/
+@media screen and (min-width: 1025px) {
+  body {
+      background-color: #313640;}
+    .grid-container {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: auto 4vw auto;
+background-color: #313640;
+    }
+
+.section1 {
+    grid-column: 1 / 2;
+    grid-row: 1;
+}
+.section2 {
+    grid-column: 3;
+    grid-row:1; 
+}
+.section3 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.section4 {
+    grid-column: 2 / 3;
+    grid-row:2; 
+}
+.section5 {
+    grid-column:1 / span 2;
+    grid-row:3; 
+}
+.section6 {
+    grid-column:2;
+    grid-row:3; 
+}
+.section7 {
+    grid-column:3;
+    grid-row:3; 
+}
+    }
+
+/*This is the setup for the amount of grids and rows aswell as their sizes and other styling*/
+.grid-container {
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  grid-template-rows: auto 4vw auto;
+  background-color: #313640;
+}
+/*This is the styling for the style and look of the columns*/
+.grid-item {
+  background-color: #313640;    
+  padding: 0vw;
+  font-size: 5vw;
+  text-align: left;
+}
+
+/*This is the styling for the navbar links*/
+a{
+   color: white;
+  text-align: center;
+  padding: 0.75vw;
+  text-decoration: none;
+  font-size: 0.85vw;
+  font-family: 'Almarai';
+  float:right;
+}
+/*Used to take the user to another page*/
+.button{
+text-align: center;
+padding-top: 1.5vw;
+padding-right: 0.5vw;
+float:right;
+}
+/*This is the styling for the Header of the website*/
+h1{
+    color: #D4D8E1;
+    font-family: 'Antic';
+    font-size: 1.75vw;
+    background-color: #313640;
+    letter-spacing: 0.05vw;
+    padding-left: 1vw;
+}
+/*This is the styling for the animation when you hover over the buttons to navigate to the different pages*/
+.button a:hover {
+  background-color: #2367F5;
+  color: #D4D8E1;
+  transition: .8s; 
+}
+
